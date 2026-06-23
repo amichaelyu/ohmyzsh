@@ -1,5 +1,5 @@
 # custom files
-custom/
+# custom/
 
 # temp files directories
 cache/
@@ -18,4 +18,4 @@ log/
 
 # zcompile cached files
 *.zwc
-*.zwc.old
+.zwc.old
