@@ -102,6 +102,10 @@ alias jjbl='jj bookmark list --all'
 
 alias jjei='jje --ignore-immutable'
 
+alias jjgi='jj git init'
+
+alias jjap='jj bookmark set -r @-'
+
 grc() {
 	gaa
 	git rm -r --cached .
