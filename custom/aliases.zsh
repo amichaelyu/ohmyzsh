@@ -106,6 +106,8 @@ alias jjgi='jj git init'
 
 alias jjap="jj bookmark move --from 'heads(::@- & bookmarks())' --to @-"
 
+alias jjnm='jj new trunk()'
+
 grc() {
 	gaa
 	git rm -r --cached .
