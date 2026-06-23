@@ -32,7 +32,7 @@ jj_custom_status() {
   in_jj_repo || return
   local bookmark=$(jj log -r 'latest(::@ & (bookmarks() | remote_bookmarks()))' --no-graph --color never --ignore-working-copy -T 'if(local_bookmarks, local_bookmarks.map(|b| b.name()).join(","), remote_bookmarks.map(|b| b.name()).join(","))' 2> /dev/null)
   if [ -n "$bookmark" ]; then
-    local dirty=$(jj log -r '@' --no-graph --color never --ignore-working-copy -T 'if(empty, "", "*")' 2> /dev/null)
+    local dirty=$(jj log -r '@' --no-graph --color never -T 'if(empty, "", "*")' 2> /dev/null)
     echo "%{$fg[green]%}[$bookmark]%{$reset_color%}%{$fg[red]%}$dirty%{$reset_color%}"
   fi
 }
