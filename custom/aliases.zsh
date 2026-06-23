@@ -104,7 +104,7 @@ alias jjei='jje --ignore-immutable'
 
 alias jjgi='jj git init'
 
-alias jjap='jj bookmark set -r @-'
+alias jjap="jj bookmark move --from 'heads(::@- & bookmarks())' --to @-"
 
 grc() {
 	gaa
