@@ -106,7 +106,7 @@ alias jjgi='jj git init'
 
 alias jjap="jj bookmark move --from 'heads(::@- & bookmarks())' --to @-"
 
-alias jjnm='jj new trunk()'
+alias jjnm="jj new 'trunk()'"
 
 jjapp() {
 	jjap
