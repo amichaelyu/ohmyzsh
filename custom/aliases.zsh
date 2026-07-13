@@ -102,6 +102,8 @@ alias jjbl='jj bookmark list --all'
 
 alias jjei='jje --ignore-immutable'
 
+alias jjai='jja --ignore-immutable'
+
 alias jjgi='jj git init'
 
 alias jjap="jj bookmark move --from 'heads(::@- & bookmarks())' --to @-"
