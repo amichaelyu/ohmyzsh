@@ -43,7 +43,7 @@ ytd() {
 
 alias zipe='zip -er'
 
-alias repo='~/.oh-my-zsh/custom/plugins/gitRepo/gitRepo.zsh'
+# alias repo='~/.oh-my-zsh/custom/plugins/gitRepo/gitRepo.zsh'
 
 alias pr='~/.oh-my-zsh/custom/plugins/gitPR/gitPR.zsh'
 
@@ -149,4 +149,12 @@ gitlab() {
 github() {
 	git config --global user.email 64374317+amichaelyu@users.noreply.github.com
 	git config --global user.signingkey 856472A96F9C0926
+}
+
+kria() {
+	if ! ip addr show enp130s0 | grep -q 192.168.50.1/24; then
+		sudo ip addr add 192.168.50.1/24 dev enp130s0
+		sudo ip link set enp130s0 up
+	fi
+	sshpass -p amd ssh amd@192.168.50.100
 }
