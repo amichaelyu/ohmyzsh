@@ -1,5 +1,6 @@
 # alias .='~/.oh-my-zsh/custom/gitSwitcher.zsh'
 alias myth='ssh yumich@myth.stanford.edu'
+alias farm='ssh yumich@login.farmshare.stanford.edu'
 
 alias oh='cd ~/.oh-my-zsh/custom'
 alias bunn='bun create next-app@latest'
