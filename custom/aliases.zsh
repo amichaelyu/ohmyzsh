@@ -158,3 +158,7 @@ kria() {
 	fi
 	sshpass -p amd ssh amd@192.168.50.100
 }
+
+fpga() {
+	source ~/amd/Vitis/2024.2/settings64.sh
+}
