@@ -160,5 +160,14 @@ kria() {
 }
 
 fpga() {
-	source ~/amd/Vitis/2024.2/settings64.sh
+	source ~/amd/2026.1/Vitis/settings64.sh
 }
+
+byo() {
+	docker run --rm -it \
+		-v /home/michael/dev:/home/michael/dev \
+		crops/poky:ubuntu-22.04 \
+		--workdir=/home/michael/dev/yocto/rel-v2026.1 \
+		/bin/bash -c '. ./setupsdk && exec bash'
+}
+
