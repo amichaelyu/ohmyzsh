@@ -156,7 +156,7 @@ kria() {
 		sudo ip addr add 192.168.50.1/24 dev enp130s0
 		sudo ip link set enp130s0 up
 	fi
-	sshpass -p amd ssh amd@192.168.50.100
+	ssh root@192.168.50.100
 }
 
 fpga() {
