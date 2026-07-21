@@ -111,7 +111,7 @@ alias jjap="jj bookmark move --from 'heads(::@- & bookmarks())' --to @-"
 
 alias jjnm="jj new 'trunk()'"
 
-alias jjsqi='jjsq --ignore-imutable'
+alias jjsqi='jjsq --ignore-immutable'
 
 jjapp() {
 	jjap
