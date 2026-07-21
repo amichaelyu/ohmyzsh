@@ -10,7 +10,7 @@ alias crocs='CROC_SECRET=michaelyu croc send'
 
 alias f='open .'
 alias ignore='cp ~/.gitignore .'
-alias d='cd ~/Developer'
+alias d='cd ~/dev'
 
 alias dp='cd ~/Developer/PyCharm'
 alias di='cd ~/Developer/IntelliJ'
