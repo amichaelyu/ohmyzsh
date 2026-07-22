@@ -166,8 +166,16 @@ fpga() {
 byo() {
 	docker run --rm -it \
 		-v /home/michael/dev:/home/michael/dev \
-		crops/poky:ubuntu-22.04 \
-		--workdir=/home/michael/dev/yocto/rel-v2026.1 \
-		/bin/bash -c '. ./setupsdk && exec bash'
+		-v /home/michael/.ssh:/home/pokyuser/.ssh:ro \
+		crops/poky:ubuntu-22.04 --workdir=/home/michael/dev/yocto/rel-v2026.1 \
+		bash -c 'source sources/poky/oe-init-build-env build && exec bash'
+}
+
+byod() {
+	docker run --rm -it \
+		-v /home/michael/dev:/home/michael/dev \
+		-v /home/michael/.ssh:/home/pokyuser/.ssh:ro \
+		crops/poky:ubuntu-22.04 --workdir=/home/michael/dev/yocto/rel-v2026.1 \
+		bash -c 'source sources/poky/oe-init-build-env build && bitbake core-image-minimal'
 }
 
