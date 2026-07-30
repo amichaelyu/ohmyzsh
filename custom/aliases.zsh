@@ -12,12 +12,6 @@ alias f='open .'
 alias ignore='cp ~/.gitignore .'
 alias d='cd ~/Developer'
 
-alias dp='cd ~/Developer/PyCharm'
-alias di='cd ~/Developer/IntelliJ'
-alias dw='cd ~/Developer/WebStorm'
-alias dc='cd ~/Developer/CLion'
-alias dx='cd ~/Developer/Xcode'
-
 alias bd='bun run dev'
 alias bp='bun run prettier'
 alias bb='bun run build'
