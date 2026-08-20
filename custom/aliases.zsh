@@ -160,13 +160,12 @@ kria() {
 }
 
 fpga() {
-	source ~/amd/2026.1/Vitis/settings64.sh
+	source ~/amd/2025.2/Vitis/settings64.sh
 }
 
 byo() {
 	docker run --rm -it \
 		-v /home/michael/dev:/home/michael/dev \
-		-v /home/michael/.ssh:/home/pokyuser/.ssh:ro \
 		crops/poky:ubuntu-22.04 --workdir=/home/michael/dev/yocto/rel-v2026.1 \
 		bash -c 'source sources/poky/oe-init-build-env build && exec bash'
 }
@@ -174,7 +173,6 @@ byo() {
 byod() {
 	docker run --rm -it \
 		-v /home/michael/dev:/home/michael/dev \
-		-v /home/michael/.ssh:/home/pokyuser/.ssh:ro \
 		crops/poky:ubuntu-22.04 --workdir=/home/michael/dev/yocto/rel-v2026.1 \
 		bash -c 'source sources/poky/oe-init-build-env build && bitbake core-image-minimal'
 }
