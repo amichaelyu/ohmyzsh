@@ -37,8 +37,6 @@ ytd() {
 
 alias zipe='zip -er'
 
-alias gho='~/.oh-my-zsh/custom/plugins/gitRepo/gitRepo.zsh'
-
 alias pr='~/.oh-my-zsh/custom/plugins/gitPR/gitPR.zsh'
 
 alias zeda='~/.oh-my-zsh/custom/plugins/zeda/zeda.zsh'
