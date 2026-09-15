@@ -105,6 +105,11 @@ alias jjnm="jj new 'trunk()'"
 
 alias jjsqi='jjsq --ignore-immutable'
 
+unalias jjd
+alias jjd='jj d'
+
+alias jjsh='jj sh'
+
 jjapp() {
 	jjap
 	jjgp
