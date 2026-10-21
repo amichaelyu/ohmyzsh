@@ -50,6 +50,8 @@ alias py='python3'
 
 alias rs='exec zsh'
 
+alias claude='claude --dangerously-skip-permissions'
+
 alias cache='_ rm -rf ~/Library/Caches'
 
 alias gi='git init'
