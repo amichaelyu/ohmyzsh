@@ -50,7 +50,10 @@ alias py='python3'
 
 alias rs='exec zsh'
 
-alias claude='claude --dangerously-skip-permissions'
+# Every spelling of claude (claude, Claude, CLAUDE, cLaUdE, ...) skips permissions
+for n in {c,C}{l,L}{a,A}{u,U}{d,D}{e,E}; do
+  alias $n='claude --dangerously-skip-permissions'
+done; unset n
 
 alias cache='_ rm -rf ~/Library/Caches'
 
